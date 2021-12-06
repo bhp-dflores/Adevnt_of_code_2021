@@ -9,7 +9,6 @@ import re
 def create_screen(size):
     screen = []
     screen_c = []
-
     for i in range(size):
         for j in range(size):
             screen_c.append(0)
@@ -73,7 +72,6 @@ def points(screen):
 if __name__ == '__main__':
     with open('inputs/input5.txt') as f:
         contents = f.readlines()
-
     new_contents = []
     for line in contents:
         a_tuple = re.search(r'(\d+,\d+)\s\-\>\s(\d+,\d+)',line)
@@ -81,9 +79,7 @@ if __name__ == '__main__':
         x2,y2 = [int(x) for x in a_tuple.group(2).split(',')]
         line = [[x1,y1],[x2,y2]]
         new_contents.append(line)
-
     screen = create_screen(1000)
-
     screen = up_down(screen, new_contents)
 
     solution_1 = points(screen)
