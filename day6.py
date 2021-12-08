@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Dec  7 13:23:01 2021
-
-@author: DavidFlores
-"""
 
 from collections import Counter
 
