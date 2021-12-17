@@ -34,7 +34,3 @@ def min_max(frequency):
 freq, template = polymer(template,pairs,10)
 min_char, max_char = min_max(freq)
 print(f'Solution 1: {max_char-min_char}')
-
-freq, template = polymer(template,pairs,40)
-min_char, max_char = min_max(freq)
-print(f'Solution 2: {max_char-min_char}')
